@@ -114,11 +114,11 @@ public class HandAnalyserTest {
 	@Test
 	public void shouldFindStraightFlush() {
 		Hand hand = new Hand();
-		hand.addCard(new Card(CardFaces.SEVEN, CardSuits.CLUBS));
-		hand.addCard(new Card(CardFaces.EIGHT, CardSuits.CLUBS));
-		hand.addCard(new Card(CardFaces.NINE, CardSuits.CLUBS));
-		hand.addCard(new Card(CardFaces.FIVE, CardSuits.CLUBS));
-		hand.addCard(new Card(CardFaces.SIX, CardSuits.CLUBS));
+		hand.addCard(new Card(CardFaces.SEVEN, CardSuits.DIAMONDS));
+		hand.addCard(new Card(CardFaces.EIGHT, CardSuits.DIAMONDS));
+		hand.addCard(new Card(CardFaces.NINE, CardSuits.DIAMONDS));
+		hand.addCard(new Card(CardFaces.FIVE, CardSuits.DIAMONDS));
+		hand.addCard(new Card(CardFaces.SIX, CardSuits.DIAMONDS));
 		handAnalyser.findHandRanking(hand);
 		assertEquals(HandRankings.STRAIGHT_FLUSH, hand.getRanking());
 	}
